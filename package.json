@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/fernando-albsilva/handlebars-template-creator/issues"
   },
-  "homepage": "https://github.com/fernando-albsilva/handlebars-template-creator#readme"
+  "homepage": "https://github.com/fernando-albsilva/handlebars-template-creator#readme",
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  }
 }
