@@ -2,8 +2,9 @@
   "name": "handlebars-template-creator",
   "version": "1.0.0",
   "description": "project to create templates using handle bars",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "nodemon --watch src --ignore src/compiled -e js,json,html,hbs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/fernando-albsilva/handlebars-template-creator#readme",
   "dependencies": {
     "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
