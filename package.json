@@ -1,0 +1,19 @@
+{
+  "name": "handlebars-template-creator",
+  "version": "1.0.0",
+  "description": "project to create templates using handle bars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernando-albsilva/handlebars-template-creator.git"
+  },
+  "author": "Fernando Albuquerque Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernando-albsilva/handlebars-template-creator/issues"
+  },
+  "homepage": "https://github.com/fernando-albsilva/handlebars-template-creator#readme"
+}
