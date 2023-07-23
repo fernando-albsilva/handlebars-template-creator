@@ -1,6 +1,8 @@
 const fileSystem = require("fs");
 const Handlebars = require("handlebars");
 
+registerHelpers();
+
 const templateString = readTemplateFromFile("src/template.hbs");
 const data = readSourceFromFile("src/data.json");
 const compiledTemplate = compileTemplate(templateString, data);
@@ -9,6 +11,11 @@ consolePrintTemplate(compiledTemplate);
 consolePrintDate();
 
 writeCompiledTemplateToFile(compiledTemplate);
+
+function registerHelpers() {
+    const helpersSource = fileSystem.readFileSync("src/helpers.js", "utf-8");
+    eval(helpersSource);
+}
 
 function readTemplateFromFile(path) {
     return fileSystem.readFileSync(path, "utf-8");
@@ -37,7 +44,7 @@ function consolePrintTemplate(compiledTemplate) {
 function consolePrintDate() {
     console.log("///////////////////////////////");
     console.log("Build in : ");
-    // format date in hh/mm/ss dd/mm/yyyy with new date
+
     const date = new Date();
 
     const hours = String(date.getHours()).padStart(2, "0");
